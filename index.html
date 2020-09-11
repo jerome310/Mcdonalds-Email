@@ -6,48 +6,111 @@
     <title>Mcdonald Email</title>
 
     <style>
+
+      /* Survey Says Section Media Queries */
+      @media only screen and (max-width: 1184px){
+       .column-left {
+        width: 50% !important;
+      }
+      .column-middle {
+        width: 50% !important;
+      }
+      .column-middle-right {
+        width: 50% !important;
+      }
+      .column-right {
+        width: 50% !important;
+      }
+      .footer-icon-section img {
+        width: 50% !important;
+      }
+      }
+    /* Desktop Media Queries */
+    @media only screen and (min-width: 900px){
+      .container {
+        width: 900px;
+      }
+    }
+
+    /*  <!-- Tablet Media Queries --> */
+    @media only screen and (max-width: 900px){
+    .container {
+      width: 600px;
+    }
+    .McDonalds-logo {
+      /* text-align: center; */
+    }
+    .fries-container .fries-phone-section {
+     width: 100% !important;
+    }
+    .McDonalds-video .header-video {
+      width: 60% !important;
+    }
+    .header-text-container h1{
+      padding: 0 40px;
+    }
+    .fries-container .survey-says-text {
+      max-width: 25% !important;
+    }
+    .survey-says-section {
+      padding: 0 20px;
+    }
+    .footer-icon-section img {
+        width: 50% !important;
+      }
+     }
+
     /*  <!-- Mobile Media Queries --> */
-   @media only screen and (max-width: 768px){
-     /* .width100 {
-       width: 100%;
-     } */
-     .McDonalds-logo {
-     text-align: center;
-     }
-     .header-video {
-      width: 100%    !important; 
-      height: auto   !important;
-     }
-     .header-text-container {
-      width: 100%    !important; 
-      height: auto   !important;
-     }
-     .header-section-text {
-      /* width: 100%    !important; 
-      height: auto   !important; */
-     padding: 0 45px;
-     }
-     .fries-phone-section {
-       display: none;
-     }
-     .survey-says-section {
-       display: none;
-     }
-     .survey-says-section-container {
-       display: none;
-     }
-     .footer-icon-section {
-       display: none;
-     }
-     .footer-letter-section {
-       display: none;
-     }
-     .footer-par-section {
-       display: none;
-     }
-     .column-section {
-       width: 50%;
-     }
+   @media only screen and (max-width: 600px){
+    .container {
+      width: 100%;
+    }
+    .McDonalds-video {
+      width: 50% !important; 
+    }
+    .McDonalds-video .header-video {
+      width: 75% !important;
+    }
+    .fries-container .fries-phone-section {
+     width: 100% !important;
+    }
+    .header-text-container h1 {
+      font-size: 25px;
+    }
+    .header-text-container p {    
+      padding: 0 20px !important;
+    }
+    .fries-container h1 {
+      font-size: 25px;
+    }
+    .fries-container p {
+      font-size: 14px;
+    }
+    .column-left {
+      width: 100% !important;
+      }
+    .column-middle {
+      width: 100% !important;
+      }
+    .column-middle-right {
+      width: 100% !important;
+      }
+    .column-right {
+      width: 100% !important;
+      }
+    .footer-icon-section {
+      width: 50.0% !important;
+      /* margin: auto 148px; */
+    } 
+    .footer-icon-section img {
+      width: 50% !important;
+    }
+    .footer-icon-section .McDonalds-letters {
+      padding-left: 30px !important; 
+    }
+     .footer-images {
+      margin: 0px;
+    }
    }
     </style>
   </head>
@@ -58,33 +121,41 @@
      <tr>
        <td>
          <!-- HTML CONTENT CONTAINER -->
-         <table cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+         <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" class="container">
             <tr>
               <td>
                  <!-- Mcdonalds Logo -->
                 <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" class="McDonalds-logo">
                   <tr>
-                    <td>
-                      <img src="/images/Mcdonalds-logo.png" alt="McDonalds Logo" style="padding-left: 20px; padding-bottom: 10px;">
+                    <td>                    
+                        <tr>
+                          <td align="center">
+                            <img src="/images/Mcdonalds-logo.png" alt="McDonalds Logo" style="padding-bottom: 10px;">
+                          </td>
+                        </tr>                    
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
               <!-- Mcdonalds Happy National Drive Thru day section -->
-              <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color:#ffbc0d; text-align: center;"  class="header-video">
+              <table cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" class="McDonalds-video" style="background-color:#ffbc0d; text-align: center;">
                 <tr>
                   <td>
-                    <img src="/images/Mcdonalds-center-video.gif" alt="McDonalds drive-thru video" style="margin-top: 40px;">
+                <tr>
+                  <td>
+                    <img src="/images/Mcdonalds-center-video.gif" alt="McDonalds drive-thru video" style="margin-top: 40px; width: 80%;" class="header-video">
                   </td>
+                </tr>
+                </td>
                 </tr>
               </table>
                <!-- Come thru for free fries section -->
-               <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color:#ffbc0d; text-align: center;" class="header-text-container">
+               <table cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" style="background-color:#ffbc0d; text-align: center;" class="header-text-container">
                 <tr>
                   <td class="header-section-text">
-                    <h1 style="margin-top: 40px; font-family: Roboto, sans-serif; margin-bottom: 0;">Happy National Drive Thru Day</h1>
-                    <p style="margin: 0; text-align: left; padding-left: 50px; padding-right: 50px; margin-bottom: 30px; font-family: Roboto, sans-serif;">
+                    <h1 style="margin-top: 40px; font-family: Roboto, sans-serif; margin-bottom: 10px;">Happy National Drive Thru Day</h1>
+                    <p style="margin: 0; text-align: center; padding-left: 50px; padding-right: 50px; margin-bottom: 30px; font-family: Roboto, sans-serif; line-height: 1.5;">
                       A lunch hero, road trip essential or family dinner in a dash <span>&#8212;</span> your faves are (and always have been) a Drive Thru stop away since the 1970s.
                     </p>
                     <a href="#" style="border: 1px solid #db0007; color: white; text-decoration: none; background-color: #db0007; padding: 10px 20px 10px 20px; border-radius: 30px; font-family: Roboto, sans-serif; z-index: 1; position: relative;">Order on the App</a>
@@ -93,10 +164,16 @@
                 <tr><td style="height: 40px;"></td></tr>
                </table>
                <!-- Fries & Phone Section w/ text -->
-               <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="text-align: center;" class="fries-phone-section">
+               <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="text-align: center;" class="fries-container">
                   <tr>
                     <td>
-                      <img src="/images/Mcdonalds-fries-phone.jpg" alt="McDonalds fries and phone app image" style="max-width: 600px;">
+                      <table cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" class="fries-image-container">
+                        <tr>
+                          <td>
+                            <img src="/images/Mcdonalds-fries-phone.jpg" alt="McDonalds fries and phone app image" style="max-width: 100%;" class="fries-phone-section">
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                   <tr>
@@ -109,23 +186,23 @@
                   <tr><td style="height: 40px;"></td></tr>
                   <tr>
                     <td>
-                      <h1 style="margin: 0 auto; text-align: center; font-family: Roboto, sans-serif; color: #ffbc0d; font-size: 30px;font-weight: 900; background-color: white; position: relative; top: 20px; max-width: 32%;">Survey Says</h1>
+                      <h1 style="margin: 0 auto; text-align: center; font-family: Roboto, sans-serif; color: #ffbc0d; font-size: 30px;font-weight: 900; background-color: white; position: relative; top: 20px; max-width: 20%;" class="survey-says-text">Survey Says</h1>
                     </td>
                   </tr>
                </table>
                <!-- survey says section -->
-               <table cellpadding="0" cellspacing="0" border="0" width="580" align="center" style="border:10px solid #ffbc0d; border-bottom:none; text-align: center;" class="survey-says-section">
+               <table cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" style="border:10px solid #ffbc0d; border-bottom:none; text-align: center;" class="survey-says-section">
                   <tr>
                     <td>
                       <p style="padding-top: 20px; font-family: Roboto, sans-serif; text-align: center;">Tell us what you'd like to see in future McDonald's emails</p>
                     </td>
                   </tr>
                   <!-- Images with inside the Survey Says Box -->
-                   <table  cellpadding="0" cellspacing="0" border="0" width="580" align="center" style="border:10px solid #ffbc0d; border-top: none; text-align: center;" class="survey-says-section-container">
+                   <table  cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" style="border:10px solid #ffbc0d; border-top: none; text-align: center;" class="survey-says-section-container">
                      <tr>
                        <td>
                          <!-- 1st Survey Say Section -->
-                         <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-section">
+                         <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-left">
                           <tr>
                             <td>
                               <img src="/images/Mcdonald-yellow-tag.jpg" alt="McDonalds deals tag" style="padding-top: 20px;">
@@ -140,7 +217,7 @@
                           </tr>
                          </table>
                           <!-- 2nd Survey Say Section -->
-                         <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-section">
+                         <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-middle">
                           <tr>
                             <td>
                               <img src="/images/Mcdonald-brown-bag.jpg" style="padding-top: 20px;">
@@ -154,7 +231,7 @@
                             </tr>
                           </tr>
                         </table>
-                            <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-section">
+                            <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-middle-right">
                           <!-- 3rd Survey Say Section -->
                           <tr>
                             <td>
@@ -169,7 +246,7 @@
                             </tr>
                           </tr>
                         </table>
-                            <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-section">
+                            <table cellpadding="0" cellspacing="0" border="0" width="25%" align="left" class="column-right">
                             <!-- 4th Survey Say Section -->
                           <tr>
                             <td>
@@ -190,27 +267,27 @@
                    <tr><td style="height: 30px;"></td></tr>
                </table>
             <!-- Mcdonalds Footer section -->
-            <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color: #292929; height: 75px;" class="footer-icon-section">
-              <tr>
-                <td>
-                  <img src="/images/McDonalds_com.png" alt="McDonalds.com link" style="width: 35%; padding-left: 50px;">
-                </td>
-                <td>
-                  <img src="/images/facebook-logo.png" alt="facebook logo icon" style="width: 35%;">
-                </td>
-                <td>
-                  <img src="/images/twitter-logo.png" alt="facebook logo icon" style="width: 35%;">
-                </td>
-                <td>
-                  <img src="/images/instagram-logo.png" alt="facebook logo icon" style="width: 35%;">
-                </td>
-                <td>
-                  <img src="/images/youtube-logo.png" alt="facebook logo icon" style="width: 35%;">
-                </td>
-              </tr>
-            </table>
+            <!-- <table cellpadding="0" cellspacing="0" border="0" width="50.4%" align="center" style="background-color: #292929; height: 75px;" class="footer-icon-section">        
+                    <tr>
+                      <td>
+                        <img src="/images/McDonalds_com.png" alt="McDonalds.com link" style="width: 35%; padding-left: 50px;" class="McDonalds-letters">
+                      </td>
+                      <td>
+                        <img src="/images/facebook-logo.png" alt="facebook logo icon" style="width: 35%;">
+                      </td>
+                      <td>
+                        <img src="/images/twitter-logo.png" alt="facebook logo icon" style="width: 35%;">
+                      </td>
+                      <td>
+                        <img src="/images/instagram-logo.png" alt="facebook logo icon" style="width: 35%;">
+                      </td>
+                      <td>
+                        <img src="/images/youtube-logo.png" alt="facebook logo icon" style="width: 35%;">
+                      </td>
+                    </tr>            
+            </table> -->
             <!-- Footer Letter Section -->
-              <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color: #e9e9e9;height: 75px;" class="footer-letter-section">
+              <!-- <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color: #e9e9e9;height: 75px;" class="footer-letter-section">
                  <tr>
                    <td>
                      <table cellpadding="0" cellspacing="0" border="0" align="center">
@@ -230,9 +307,9 @@
                        </tr>
                      </table>
                    </td>
-                 </tr>
+                 </tr> -->
                  <!-- Footer Information -->
-                 <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color: #e9e9e9; height: 75px; padding: 0 40px; font-family: Roboto, sans-serif;" class="footer-par-section">
+                 <!-- <table cellpadding="0" cellspacing="0" border="0" width="600" align="center" style="background-color: #e9e9e9; height: 75px; padding: 0 40px; font-family: Roboto, sans-serif;" class="footer-par-section">
                    <tr>
                      <td>
                        <p style="font-size: 11px; margin-bottom: 15px;">&copy;2010-2020 McDonald's. All Rights Reserved. 100 N Carpenter St. Chicago, IL 60607</p>
@@ -263,7 +340,7 @@
                        <p style="font-size: 11px;">Have questions? Contact us online.</p>
                      </td>
                    </tr>
-                 </table>
+                 </table> -->
               </table>
          </table>
        </td>
